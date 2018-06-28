@@ -16,8 +16,9 @@
 ############################################################################
 
 #CPPFLAGS = -O -Wall
-AR              = ar
-CXX             = g++
+CROSS           = /home/cmi-at751/ti-processor-sdk-linux-am335x-evm-03.03.00.04/linux-devkit/sysroots/x86_64-arago-linux/usr/bin/arm-linux-gnueabihf-
+AR              = $(CROSS)ar
+CXX             = $(CROSS)g++
 CPPFLAGS        = -g -Wall -I../../opensource/include/libxml2
 
 LLRPDEF         = ../../Definitions/Core/llrp-1x0-def.xml
@@ -122,7 +123,7 @@ out_ltkcpp.inc:  ltkcpp_gen_cpp.xslt $(LLRPDEF)
 
 clean:
 	rm -f *.o *.core core.[0-9]*
-	rm -f out_*.inc out_*.h
+	#rm -f out_*.inc out_*.h
 	rm -f *.a
 	cd LLRP.org; make clean
 

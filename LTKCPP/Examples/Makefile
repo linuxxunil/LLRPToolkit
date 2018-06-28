@@ -19,8 +19,9 @@ LIBDIR=../Library
 INCL = -I$(LIBDIR)
 
 #CPPFLAGS = -O -Wall $(INCL)
-AR              = ar
-CXX             = g++
+CROSS		=  /home/cmi-at751/ti-processor-sdk-linux-am335x-evm-03.03.00.04/linux-devkit/sysroots/x86_64-arago-linux/usr/bin/arm-linux-gnueabihf-
+AR              = $(CROSS)ar
+CXX             = $(CROSS)g++
 CPPFLAGS        = -g -Wall $(INCL)
 
 LTKCPP_LIB = $(LIBDIR)/libltkcpp.a

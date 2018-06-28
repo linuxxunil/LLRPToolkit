@@ -53,7 +53,7 @@
 
 
 #include <stdio.h>
-
+#include <stdint.h>
 #include "ltkcpp.h"
 #include "libxml/parser.h"
 #include "libxml/tree.h"

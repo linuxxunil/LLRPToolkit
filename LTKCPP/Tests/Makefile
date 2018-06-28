@@ -20,9 +20,10 @@ XML2DIR=../../opensource/include/libxml2
 INCL = -I$(LIBDIR) -I$(XML2DIR)
 
 #CPPFLAGS = -O -Wall $(INCL)
-AR              = ar
-CXX             = g++
-CPPFLAGS        = -g -Wall $(INCL)
+CROSS           =  /home/cmi-at751/ti-processor-sdk-linux-am335x-evm-03.03.00.04/linux-devkit/sysroots/x86_64-arago-linux/usr/bin/arm-linux-gnueabihf-
+AR              = $(CROSS)ar
+CXX             = $(CROSS)g++
+CPPFLAGS        = -g -Wall $(INCL) -lz -lm
 
 LTKCPP_LIB = $(LIBDIR)/libltkcpp.a
 XML2_LIB = ../../opensource/lib/libxml2.a
