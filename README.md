@@ -5,4 +5,7 @@ So, If you want to recompile the source , you must change the files,
   * LTKCPP/Test/Makefile
   * LTKCPP/Examples/Makefile
 
+You need install this apps :
+  * apt-get install xsltproc
+
 Ref : The source forks from LLRPToolkit CVS. see http://llrp.org/
