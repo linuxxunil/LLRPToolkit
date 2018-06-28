@@ -66,5 +66,5 @@ out_llrporg_ltkcpp.inc: $(CODE_GEN_CPP_XSLT) $(LLRPORGDEF)
 
 clean:
 	rm -f *.o *.core core.[0-9]*
-	rm -f out_*.inc out_*.h
+	#rm -f out_*.inc out_*.h
 	rm -f *.a

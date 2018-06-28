@@ -18,7 +18,7 @@
 
 all:
 	cd Library;     make all
-	cd Tests;       make all
+	#cd Tests;       make all
 	cd Examples;    make all
 
 everything:

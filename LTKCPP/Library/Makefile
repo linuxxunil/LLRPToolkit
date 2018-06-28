@@ -122,7 +122,7 @@ out_ltkcpp.inc:  ltkcpp_gen_cpp.xslt $(LLRPDEF)
 
 clean:
 	rm -f *.o *.core core.[0-9]*
-	rm -f out_*.inc out_*.h
+	#rm -f out_*.inc out_*.h
 	rm -f *.a
 	cd LLRP.org; make clean
 

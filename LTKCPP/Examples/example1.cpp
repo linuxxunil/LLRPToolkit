@@ -49,7 +49,7 @@
 
 
 #include <stdio.h>
-
+#include <stdlib.h>
 #include "ltkcpp.h"
 
 using namespace LLRP;
@@ -887,7 +887,7 @@ CMyApplication::addROSpec (void)
     pROReportSpec->setTagReportContentSelector(pTagReportContentSelector);
 
     CROSpec *                   pROSpec = new CROSpec();
-    pROSpec->setROSpecID(123);
+    pROSpec->setROSpecID(1235);
     pROSpec->setPriority(0);
     pROSpec->setCurrentState(ROSpecState_Disabled);
     pROSpec->setROBoundarySpec(pROBoundarySpec);
@@ -993,7 +993,7 @@ CMyApplication::enableROSpec (void)
      */
     pCmd = new CENABLE_ROSPEC();
     pCmd->setMessageID(202);
-    pCmd->setROSpecID(123);
+    pCmd->setROSpecID(1235);
 
     /*
      * Send the message, expect the response of certain type
@@ -1078,7 +1078,7 @@ CMyApplication::startROSpec (void)
      */
     pCmd = new CSTART_ROSPEC();
     pCmd->setMessageID(202);
-    pCmd->setROSpecID(123);
+    pCmd->setROSpecID(1235);
 
     /*
      * Send the message, expect the response of certain type
